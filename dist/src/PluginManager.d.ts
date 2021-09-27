@@ -1,5 +1,5 @@
 /// <reference types="node" />
-import { NpmRegistryConfig } from "./NpmRegistryClient";
+import { NpmRegistry, NpmRegistryConfig } from "./NpmRegistryClient";
 import { IPluginInfo } from "./PluginInfo";
 import { GithubAuth } from "./GithubRegistryClient";
 import { PackageInfo } from "./PackageInfo";
@@ -41,8 +41,9 @@ export declare class PluginManager {
      * Install a package from npm
      * @param name name of the package
      * @param version version of the package, default to "latest"
+     * @param npmRegistryConfig the registry where the package is installed
      */
-    installFromNpm(name: string, version?: string): Promise<IPluginInfo>;
+    installFromNpm(name: string, version?: string, npmRegistryConfig?: NpmRegistry): Promise<IPluginInfo>;
     /**
      * Install a package from a local folder
      * @param location package local folder location

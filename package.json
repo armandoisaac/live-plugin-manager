@@ -1,6 +1,6 @@
 {
-  "name": "live-plugin-manager",
-  "version": "0.16.0",
+  "name": "runtime-plugin-manager-clone",
+  "version": "0.1.0",
   "description": "Install and uninstall any node package at runtime from npm registry",
   "keywords": [
     "plugin",
@@ -19,12 +19,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/davideicardi/live-plugin-manager.git"
+    "url": "git+https://github.com/armandoisaac/live-plugin-manager.git"
   },
   "author": "Davide Icardi",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/davideicardi/live-plugin-manager/issues"
+    "url": "https://github.com/armandoisaac/live-plugin-manager/issues"
   },
   "homepage": "https://github.com/davideicardi/live-plugin-manager#readme",
   "devDependencies": {

@@ -8,6 +8,10 @@ export declare class NpmRegistryClient {
     download(destinationDirectory: string, packageInfo: PackageInfo): Promise<string>;
     private getNpmData;
 }
+export interface NpmRegistry {
+    url: string;
+    config?: NpmRegistryConfig;
+}
 export interface NpmRegistryConfig {
     auth?: NpmRegistryAuthToken | NpmRegistryAuthBasic;
     userAgent?: string;
